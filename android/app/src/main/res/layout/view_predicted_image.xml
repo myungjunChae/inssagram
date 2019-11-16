@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorBlack"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/heart_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_heart"
+            app:layout_constraintStart_toStartOf="@id/image_view"
+            app:layout_constraintTop_toBottomOf="@id/image_view" />
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:text="like"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@id/heart_image"
+            app:layout_constraintStart_toEndOf="@id/heart_image"
+            app:layout_constraintTop_toTopOf="@id/heart_image" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
